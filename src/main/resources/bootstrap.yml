@@ -13,12 +13,6 @@ spring:
           skip-ssl-validation: true
           search-paths: discovery-server
           try-master-branch: true
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://eureka:8761/eureka
-    register-with-eureka: true
-    fetch-registry: true
 
 
 
