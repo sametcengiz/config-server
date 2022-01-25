@@ -1,0 +1,25 @@
+server:
+  port: 8888
+spring:
+  application:
+    name: configserver
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/sametcengiz/app-config.git
+          username: sametcengiz
+          password: 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
+          skip-ssl-validation: true
+          search-paths: discovery-server
+          try-master-branch: true
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://eureka:8761/eureka
+    register-with-eureka: true
+    fetch-registry: true
+
+
+
+
